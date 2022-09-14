@@ -34,11 +34,9 @@ jobs:
           sudo neofetch
       - name: Pack it into binary
         run: |
-          pwd
-          ls
           go build ./main.go
           
       - uses: actions/upload-artifact@v3
         with:
           name: TikTokDownload-GUI-linux
-          path: /home/runner/work/valence_eletron_calculator/valence_eletron_calculator/dist/main
+          path: /home/runner/work/valence_eletron_calculator/valence_eletron_calculator/main
