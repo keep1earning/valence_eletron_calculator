@@ -14,6 +14,9 @@ func main() {
 		fmt.Printf("The valence electron of the element is %d", atomic_num)
 	} else {
 		valence_electron_num = (atomic_num - 2) % 8
+		if valence_electron_num == 0 {
+			valence_electron_num = 8
+		}
 		fmt.Printf("The valence electron of the element is %d", valence_electron_num)
 	}
 	time.Sleep(5 * time.Second)
