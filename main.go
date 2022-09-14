@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -15,4 +16,5 @@ func main() {
 		valence_electron_num = (atomic_num - 2) % 8
 		fmt.Printf("The valence electron of the element is %d", valence_electron_num)
 	}
+	time.Sleep(5 * time.Second)
 }
