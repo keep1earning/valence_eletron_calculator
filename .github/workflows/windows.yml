@@ -34,8 +34,6 @@ jobs:
           scoop install go winfetch zip upx -g
           winfetch
           go build ./main.go
-          pwd
-          ls
           
       - uses: actions/upload-artifact@v3
         with:
