@@ -40,4 +40,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: valence_electron_calculator
-          path: D:\a\valence_eletron_calculator\valence_eletron_calculator\dist\main.exe
+          path: D:\a\valence_eletron_calculator\valence_eletron_calculator\main.exe
