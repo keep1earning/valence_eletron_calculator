@@ -31,8 +31,8 @@ jobs:
           Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
           iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
           echo Install_requirements
-          scoop install go zip upx neofoetch -g
-          neofetch
+          scoop install go winfetch zip upx -g
+          winfetch
           go build ./main.go
           
       - uses: actions/upload-artifact@v3
