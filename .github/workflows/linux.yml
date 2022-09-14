@@ -34,6 +34,8 @@ jobs:
           sudo neofetch
       - name: Pack it into binary
         run: |
+          pwd
+          ls
           go build ./main.go
           
       - uses: actions/upload-artifact@v3
